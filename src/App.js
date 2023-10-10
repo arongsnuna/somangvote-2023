@@ -16,6 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           왜 안되세요!!!!!!!!!!!!!!!!!!
+          제발 좀되람!!!!!!!!
         </a>
       </header>
     </div>
