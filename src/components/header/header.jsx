@@ -2,14 +2,21 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
+import { useNavigate } from 'react-router-dom';
 
-import logo from '../../assets/images/logos/white-text.png';
+import logo from '../../assets/images/logos/하임로고.png';
 
 const Header = () => {
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
+    const scrollToTopAndCloseMenu = () => {
+        navigate('/');
+        window.scrollTo(0, 0);
+        setIsOpen(false); // 메뉴 닫기
+    };
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
     /*--------------------------------------------------------------------------------*/
@@ -24,18 +31,23 @@ const Header = () => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 justify-content-end" id="h6-info">
                             <Nav navbar className="ms-auto">
                                 <NavItem>
-                                    <Link className="nav-link" to={"/"}>
-                                        Components
+                                    <Link className="nav-link" to={"/"} onClick={scrollToTopAndCloseMenu}>
+                                        HOME
                                     </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/custom-components"}>
-                                        Custom-Components
+                                    <Link className="nav-link" to={"/#ABOUT"} onClick={toggle}>
+                                        ABOUT
+                                    </Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link className="nav-link" to={"/#CANDIDATES"} onClick={toggle}>
+                                        CANDIDATES
                                     </Link>
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/#coming" className="btn btn-success-gradiant font-14">Upgrade To Pro</Link>
+                                <Link to="/#coming" className="btn btn-success-gradiant font-14">연설 영상 보러가기</Link>
                             </div>
                         </Collapse>
                     </Navbar>
