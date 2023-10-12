@@ -30,12 +30,12 @@ const Components = () => {
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBanner />
+                    <Cards />
                     <Buttons />
                     <Labels />
                     <PagePagination />
                     <Images />
                     <Breadcrumbs />
-                    <Cards />
                     <Dropdowns />
                     <PageForm />
                     <PageTable />
