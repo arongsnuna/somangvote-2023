@@ -47,7 +47,7 @@ const Header = () => {
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/#coming" className="btn btn-success-gradiant font-14">연설 영상 보러가기</Link>
+                                <Link to="/#coming" className="btn-get-started2 btn btn-success-gradiant font-14 "  onClick={toggle}>연설 영상 보러가기</Link>
                             </div>
                         </Collapse>
                     </Navbar>

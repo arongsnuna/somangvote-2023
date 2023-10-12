@@ -16,12 +16,17 @@
 // other navbar variations.
 
 .navbar {
-  position: relative;
+  position: fixed; /* 상단에 고정 */
+  top: 0; /* 화면의 맨 위에 위치 */
+  left: 0;
+  right: 0;
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
+  background-color: #406be0; /* 배경색 설정 */
+  z-index: 1000; /* 다른 요소 위에 표시하기 위한 z-index 설정 */
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -44,6 +49,7 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
+  margin-left: 40px;
   font-size: $navbar-brand-font-size;
   line-height: inherit;
   white-space: nowrap;
@@ -52,7 +58,6 @@
     text-decoration: none;
   }
 }
-
 
 // Navbar nav
 //
@@ -102,11 +107,14 @@
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
+  margin-left:35px;
+  margin-right:35px;
 }
 
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  margin-right: 30px;
   font-size: $navbar-toggler-font-size;
   line-height: 1;
   background-color: transparent; // remove default button style
