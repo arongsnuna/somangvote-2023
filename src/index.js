@@ -9,7 +9,6 @@ import {
   HashRouter
 } from "react-router-dom";
 import Components from "./views/components/components.jsx";
-import CustomComponents from "./views/custom-components/custom-components.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,7 +16,6 @@ var hist = createBrowserHistory();
 root.render(
   <HashRouter history={hist}>
     <Routes>
-      <Route path="/custom-components" element={<CustomComponents />} />
       <Route path="/" element={<Components />} />
     </Routes>
   </HashRouter>
