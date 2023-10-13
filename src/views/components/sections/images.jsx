@@ -29,7 +29,7 @@ const Images = () => {
                     <Col lg="4" className="text-center m-b-30">
                         <h4 className="card-title">Image with circle</h4>
                         <h6 className="card-subtitle"><code>.img-circle</code> Make sure the image is square not ractangle</h6>
-                        <img src={img2} alt="img" className="img-circle" width="290" />
+                        <img src='image/song.jpg' alt="img" className="img-circle" width="290" />
                         <p className="m-t-15 m-b-0"></p>
                     </Col>
                     <Col lg="4">
