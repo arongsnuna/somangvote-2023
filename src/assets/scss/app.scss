@@ -96,7 +96,7 @@ h2 {
 }
 
 h3 {
-    line-height: 30px;
+    line-height: 20px;
     font-size: 24px
 }
 
@@ -115,6 +115,8 @@ h6 {
     line-height: 20px;
     font-size: 16px;
     font-weight: 400;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 .display-5 {
@@ -1268,11 +1270,11 @@ Buttons
 }
 
 .btn-success-gradiant {
-    @include linear-gradient (to right, $success 0%, $success-dark 100%);
+    @include linear-gradient (to right, $warning 0%, $warning-dark 100%);
     border: 0px;
 
     &:hover {
-        @include linear-gradient (to right, $success-dark 0%, $success 100%);
+        @include linear-gradient (to right, $warning-dark 0%, $warning 100%);
 
     }
 
