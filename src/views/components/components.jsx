@@ -13,6 +13,7 @@ import PagePagination from "./sections/pagination.jsx";
 import Images from "./sections/images.jsx";
 import Breadcrumbs from "./sections/breadcrumbs.jsx";
 import Cards from "./sections/cards.jsx";
+import Candidate from "./sections/candidate.jsx";
 import Dropdowns from "./sections/dropdowns.jsx";
 import PageForm from "./sections/form.jsx";
 import PageTable from "./sections/table.jsx";
@@ -30,12 +31,13 @@ const Components = () => {
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBanner />
+                    <Cards />
+                    <Candidate />
                     <Buttons />
                     <Labels />
                     <PagePagination />
                     <Images />
                     <Breadcrumbs />
-                    <Cards />
                     <Dropdowns />
                     <PageForm />
                     <PageTable />
