@@ -19,7 +19,7 @@ const PageForm = () => {
                     <Col md="12">
                         <Form className="row">
                             <FormGroup className="col-md-6">
-                                <Label htmlFor="name">User Name</Label>
+                                <Label htmlFor="name">daniel</Label>
                                 <Input type="text" className="form-control" id="name" placeholder="Enter Username" />
                             </FormGroup>
                             <FormGroup className="col-md-6">
