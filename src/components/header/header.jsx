@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 import { useNavigate } from 'react-router-dom';
 
-import logo from '../../assets/images/logos/logo_small.png';
+import logo from '../../assets/images/logos/하임로고.png';
 
 const Header = () => {
     const navigate = useNavigate();

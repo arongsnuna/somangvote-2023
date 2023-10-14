@@ -26,6 +26,7 @@ const HeaderBanner = () => {
 
                         <Link smooth to="#CANDIDATES" className="btn-get-started btn btn-md m-t-30 font-14" >7인 후보 바로 보러가기</Link>
 
+
                     </Col>
                 </Row>
             </Container>
