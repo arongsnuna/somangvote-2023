@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
-  background-color: #406be0; /* 배경색 설정 */
+  background-color: #444585; /* 배경색 설정 */
   z-index: 1000; /* 다른 요소 위에 표시하기 위한 z-index 설정 */
 
   // Because flex properties aren't inherited, we need to redeclare these first
