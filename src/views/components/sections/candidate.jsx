@@ -240,10 +240,6 @@ const Candidate1 = () => {
         
         <div id="CANDIDATES" >
 
-            <Col md="7" className="text-center" style={{paddingTop:70, marginBottom:30}}>
-                <h1 className="title font-bold">CANDIDATES</h1>
-            </Col>
-
             <Container className="custom-container shadow" id='kim'>
                 <br></br>
                 <div style={{ backgroundColor: '#E8F5E8', textAlign: 'center', paddingTop:30, paddingBottom:20, borderRadius:20}}>

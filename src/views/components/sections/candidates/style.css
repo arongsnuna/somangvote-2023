@@ -43,3 +43,16 @@
     margin-left: 10px;
 }
 
+
+.close-button {
+    position: absolute;
+    top: 10px; /* 상단 여백 조절 */
+    right: 10px; /* 우측 여백 조절 */
+    cursor: pointer;
+    font-size: 20px;
+    color: #000; /* 아이콘 색상 설정 */
+}
+
+.close-button:hover {
+    color: #ff0000; /* 마우스 호버 시 아이콘 색상 변경 */
+}

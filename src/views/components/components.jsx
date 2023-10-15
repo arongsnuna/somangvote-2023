@@ -8,7 +8,9 @@ import Footer from "../../components/footer/footer.jsx";
 
 // sections for this page
 import Cards from "./sections/cards.jsx";
-import Candidate from "./sections/candidate.jsx";
+import PageTable from "./sections/table.jsx";
+
+// import Candidate from "./sections/candidate.jsx";
 
 // import Buttons from "./sections/buttons.jsx";
 // import Labels from "./sections/labels.jsx";
@@ -17,7 +19,6 @@ import Candidate from "./sections/candidate.jsx";
 // import Breadcrumbs from "./sections/breadcrumbs.jsx";
 // import Dropdowns from "./sections/dropdowns.jsx";
 // import PageForm from "./sections/form.jsx";
-// import PageTable from "./sections/table.jsx";
 // import Notification from "./sections/notification.jsx";
 // import TooltipPopover from "./sections/tooltip-popover.jsx";
 // import Typography from "./sections/typography.jsx";
@@ -33,15 +34,18 @@ const Components = () => {
                 <div className="container-fluid">
                     <HeaderBanner />
                     <Cards />
+                    <PageTable />
+                    {/*
                     <Candidate />
-                    {/* <Buttons />
+
+                    <Buttons />
                     <Labels />
                     <PagePagination />
                     <Images />
                     <Breadcrumbs />
                     <Dropdowns />
                     <PageForm />
-                    <PageTable />
+
                     <Notification />
                     <TooltipPopover />
                     <Typography />

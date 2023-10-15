@@ -1,15 +1,20 @@
 import React from 'react';
 import { Container, Row, Col, Table } from 'reactstrap';
+import { HashLink as Link } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+
 
 const PageTable = () => {
     return (
-        <div>
+        <div id="CANDIDATE">
             <div className="spacer" id="table-component">
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">
-                            <h1 className="title font-bold">Table</h1>
-                            <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
+                            <h1 className="title font-bold">CANDIDATES</h1>
+                            <h6 className="subtitle">7인의 후보는 학번과 이름 순으로 정렬하였습니다.</h6>
                         </Col>
                     </Row>
                 </Container>
@@ -21,55 +26,110 @@ const PageTable = () => {
                             <Table>
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
-                                        <th>Role</th>
+                                        <th>학번</th>
+                                        <th>이름</th>
+                                        <th>프로필</th>
+                                        <th>연설</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Deshmukh</td>
-                                        <td>Prohaska</td>
-                                        <td>@Genelia</td>
-                                        <td><span className="label label-danger">admin</span> </td>
+                                        <td>18</td>
+                                        <td>김정민</td>
+                                        <td>
+                                            <Link to="/Kim" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                        <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=28s">
+                                            <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                        </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                        <td>Deshmukh</td>
-                                        <td>Gaylord</td>
-                                        <td>@Ritesh</td>
-                                        <td><span className="label label-info">member</span> </td>
+                                        <td>18</td>
+                                        <td>이해윤</td>
+                                        <td>
+                                            <Link to="/Lee" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=2m32s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Sanghani</td>
-                                        <td>Gusikowski</td>
-                                        <td>@Govinda</td>
-                                        <td><span className="label label-warning">developer</span> </td>
+                                        <td>18</td>
+                                        <td>지영선</td>
+                                        <td>
+                                            <Link to="/Ji" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=5m16s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                        <td>Roshan</td>
-                                        <td>Rogahn</td>
-                                        <td>@Hritik</td>
-                                        <td><span className="label label-success">supporter</span> </td>
+                                        <td>18</td>
+                                        <td>한승재</td>
+                                        <td>
+                                            <Link to="/Han" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=7m42s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>5</td>
-                                        <td>Joshi</td>
-                                        <td>Hickle</td>
-                                        <td>@Maruti</td>
-                                        <td><span className="label label-info">member</span> </td>
+                                        <td>19</td>
+                                        <td>권은서</td>
+                                        <td>
+                                            <Link to="/Kwon" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=10m13s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>6</td>
-                                        <td>Nigam</td>
-                                        <td>Eichmann</td>
-                                        <td>@Sonu</td>
-                                        <td><span className="label label-success">supporter</span> </td>
+                                        <td>19</td>
+                                        <td>반유빈</td>
+                                        <td>
+                                            <Link to="/Ban" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=12m46s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>장종신</td>
+                                        <td>
+                                            <Link to="/Jang" className="label label-info">
+                                                보러가기
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <a className="label label-red" href="https://youtu.be/oNHtXMgSXU0?t=15m31s">
+                                                <i><FontAwesomeIcon icon={faYoutube} /></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>

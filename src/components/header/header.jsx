@@ -41,7 +41,7 @@ const Header = () => {
                                     </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/#CANDIDATES"} onClick={toggle}>
+                                    <Link className="nav-link" to={"/#CANDIDATE"} onClick={toggle}>
                                         CANDIDATES
                                     </Link>
                                 </NavItem>
