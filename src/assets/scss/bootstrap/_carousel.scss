@@ -215,6 +215,8 @@
 
   .active {
     background-color: $carousel-indicator-active-bg;
+    width: 10px;
+    height: 2px;
   }
 }
 
